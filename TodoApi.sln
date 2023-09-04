@@ -3,7 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34009.444
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoApi", "TodoApi.csproj", "{4DF8FFCC-2250-4194-BB8D-601E6609BCD4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TodoApi", "TodoApi.csproj", "{4DF8FFCC-2250-4194-BB8D-601E6609BCD4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{24CDD282-7A8C-4632-B11E-EDD15630B92F} = {24CDD282-7A8C-4632-B11E-EDD15630B92F}
+		{4FCEE792-8A50-4536-913B-BE8A5E67F37C} = {4FCEE792-8A50-4536-913B-BE8A5E67F37C}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "..\Domain\Domain.csproj", "{24CDD282-7A8C-4632-B11E-EDD15630B92F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "..\Infrastructure\Infrastructure.csproj", "{4FCEE792-8A50-4536-913B-BE8A5E67F37C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{24CDD282-7A8C-4632-B11E-EDD15630B92F} = {24CDD282-7A8C-4632-B11E-EDD15630B92F}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +26,14 @@ Global
 		{4DF8FFCC-2250-4194-BB8D-601E6609BCD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4DF8FFCC-2250-4194-BB8D-601E6609BCD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4DF8FFCC-2250-4194-BB8D-601E6609BCD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24CDD282-7A8C-4632-B11E-EDD15630B92F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24CDD282-7A8C-4632-B11E-EDD15630B92F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24CDD282-7A8C-4632-B11E-EDD15630B92F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24CDD282-7A8C-4632-B11E-EDD15630B92F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FCEE792-8A50-4536-913B-BE8A5E67F37C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FCEE792-8A50-4536-913B-BE8A5E67F37C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FCEE792-8A50-4536-913B-BE8A5E67F37C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FCEE792-8A50-4536-913B-BE8A5E67F37C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
