@@ -3,7 +3,6 @@
 This project is a practice to use:
 
 - Entity framework with .NET 7.0
-- MongoDB
 - Working methodologies on GitHub
 - ASP.NET
 - DDD (Domain-Driven Design)
