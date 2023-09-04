@@ -6,6 +6,7 @@ This project is a practice to use:
 - MongoDB
 - Working methodologies on GitHub
 - ASP.NET
+- DDD (Domain-Driven Design)
 
 ## Installation
 
